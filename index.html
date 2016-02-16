@@ -5,11 +5,23 @@
   <script src='js/assets.js'></script>
   <script src='js/app.js'></script>
   <script src='js/controllers.js'></script>
+  <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet' type='text/css'>
   <link rel='stylesheet' href='css/styles.css'>
 </head>
 <body ng-controller='ShakespeareController as SC'>
-  <h1>{{SC.title}}</h1>
-  <h3>Thou art a(n) {{SC.wordOne}} {{SC.wordTwo}} {{SC.wordThree}}</h3>
-  <button ng-click='SC.getWords()'>Generate Insults!</button>
+  <div class='inline left'>
+    <div class='imgWrapper imgWrapperLeft'>
+      <img src='http://a3.files.biography.com/image/upload/c_fit,cs_srgb,dpr_1.0,h_1200,q_80,w_1200/MTE1ODA0OTcxNzgzMzkwNzMz.jpg'>
+    </div>
+  </div>
+  <div class='inline center'>
+    <h2>{{SC.insult}}</h2>
+  </div>
+  <div class='inline right'>
+    <div class='imgWrapper imgWrapperRight'>
+      <img src='http://a3.files.biography.com/image/upload/c_fit,cs_srgb,dpr_1.0,h_1200,q_80,w_1200/MTE1ODA0OTcxNzgzMzkwNzMz.jpg'>
+    </div>
+  </div>
+  <button class='generateBtn' ng-click='SC.getWords()'>Generate Insults!</button>
 </body>
 </html>

@@ -1,0 +1,27 @@
+body {
+  font-size: 20px;
+  font-family: 'Allura', cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.inline {
+  display: inline-block;
+  text-align: center;
+  width: 25%;
+  margin-top: 5rem;
+}
+
+.center {
+  background: url('http://ustpm.org/wp-content/uploads/2015/04/Parchment-background-small-1024x6341.jpg');
+  height: 10rem;
+  width: 50%;
+  border: 3px ridge #844204;
+}
+
+.center h2 {
+  position: relative;
+  top: 50%;
+  transform: translateY(-120%);
+}
