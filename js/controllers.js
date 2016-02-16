@@ -7,7 +7,7 @@ function shakespeareController() {
   vm.wordOne = '';
   vm.wordTwo = '';
   vm.wordThree = '';
-  vm.insult = '';
+  vm.insult = 'Thou dost deserve to be insulted!';
 
   vm.getWords = function() {
     vm.wordOne = columnOne[randNum(50)];

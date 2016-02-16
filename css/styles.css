@@ -4,13 +4,51 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/2/22/Animated_fire_by_nevit.gif') center center;
+  background-size: cover;
+}
+
+div {
+  margin: 0;
+  display: inline-block;
+}
+
+.header {
+  display: block;
+  text-align: center;
+  width: 63%;
+  margin: auto;
+  height: 0;
+}
+
+.header h1 {
+  text-align: center;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(50%);
+  color: #efefef;
 }
 
 .inline {
   display: inline-block;
   text-align: center;
-  width: 25%;
-  margin-top: 5rem;
+  width: 24.4%;
+  height: 20rem;
+}
+
+.inline .imgWrapper {
+  height: 20rem;
+  width: 100%;
+}
+
+.inline .imgWrapper img {
+  height: inherit;
+  width: 100%;
+}
+
+.inline .imgWrapperLeft img {
+  transform: rotateY(180deg);
 }
 
 .center {
@@ -18,10 +56,24 @@ body {
   height: 10rem;
   width: 50%;
   border: 3px ridge #844204;
+  margin-top: -2rem;
+  positon: relative;
+  top: 50%;
+  transform: translateY(-69%);
 }
 
 .center h2 {
   position: relative;
   top: 50%;
   transform: translateY(-120%);
+}
+
+.generateBtn {
+  width: 20rem;
+  margin: auto;
+  height: 5rem;
+  margin-left: 37%;
+  color: #efefef;
+  font-size: 1.5rem;
+  border: 4px ridge #212121;
 }
